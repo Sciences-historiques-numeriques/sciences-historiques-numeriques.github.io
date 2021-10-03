@@ -4,12 +4,25 @@ You can use the [editor on GitHub](https://github.com/Sciences-historiques-numer
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+<h1>Introduction</h1>
+
+Bla bla bla
+
+Cf. le projet <a href="https://symogih.org" target="_blank">symogih.org</a>
+
+
+<h1>Syntaxe</h1>
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
+
+
+
+
 
 # Header 1
 ## Header 2
