@@ -8,7 +8,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Bla bla bla
 
-Cf. le projet <a href="https://symogih.org" target="_blank">symogih.org</a>
+Cf. le projet <a href="http://symogih.org" target="_blank">symogih.org</a>
 
 
 <h1>Syntaxe</h1>
