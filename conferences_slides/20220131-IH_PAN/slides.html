@@ -1,0 +1,309 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="../reveal/css/reveal.css" />
+		<link rel="stylesheet" href="../reveal/css/theme/serif.css" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="footer" style="font-size:5
+				40%"> Slides licenced under CC BY-SA 4.0 licence – Francesco Beretta, 2018 </div>
+			<div class="slides">
+				<section>
+					<h4 style="font-size:90%">Building a digital atlas of political territories<br />using<br />a CIDOC CRM compatible ontology</h4>
+					<br />
+					<p style="font-size:80%">Francesco Beretta</p>
+					<p style="font-size:50%">with the participation of</p>
+					<p style="font-size:70%">Claire-Charlotte Butez et Djamel Ferhod</p>
+					<p style="font-size:60%">Laboratoire de recherche historique Rhône-Alpes<br />(UMR5190 CNRS – Université de Lyon)</p>
+					<br />
+					<h4>ICHG Warshaw 2018</h4>
+				</section>
+				<section>
+					<section style="font-size:90%">
+						<h4>Presentation's steps</h4>
+					</section>
+					<section>
+						<ul style="font-size:90%">
+							<li style="font-size:90%">A digital research environment for geo-historical research: the <i>symogih.org</i> project</li>
+							<li class="fragment" style="font-size:90%">Interoperability of historical data: the <i>Data for history</i>
+								consortium</li>
+							<li class="fragment" style="font-size:90%">A digital atlas of political territories <ol style="font-size:80%">
+									<br />
+									<li class="fragment" style="margin-left:20px">Desired features</li>
+									<li class="fragment" style="margin-left:20px">Building a collaborative gazetteer: the identity of geographical
+										places</li>
+									<li class="fragment" style="margin-left:20px">Modelling the historical evolution of places <span class="fragment"
+											>and their representations with geometries</span></li>
+									<li class="fragment" style="margin-left:20px">Producing data</li>
+									<li class="fragment" style="margin-left:20px">Conclusion</li>
+								</ol>
+							</li>
+
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4><i>symogih.org</i>: a collaborative digital environment <br />for historical research</h4>
+					</section>
+					<section>
+						<img style="width:80%" data-src="../pictures/symogih_vre_omino.png" />
+					</section>
+					<section>
+						<img style="width:80%" data-src="../pictures/symogih_prod_info_galilei_teaching.jpg" />
+					</section>
+					<section>
+						<img style="width:80%" data-src="../pictures/symogih_vre_exploitation.jpg" />
+					</section>
+					<section>
+						<img style="width:80%" data-src="../pictures/symogih_chercheur_publie_internet.png" />
+					</section>
+					<section>
+						<img style="width:90%" data-src="../pictures/symogih_site_siprojuis.jpg" />
+					</section>
+					<section>
+						<img style="width:80%" data-src="../pictures/symogih_vre_techno.png" />
+					</section>
+					<section>
+						<img data-src="../pictures/symogih_site_geolarhra.jpg" />
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>Interoperability of historical data:<br />the <i>Data for history</i> consortium</h4>
+					</section>
+					<section>
+						<img style="width:80%" data-src="../pictures/resources_interlinking_kepler.jpg" />
+					</section>
+					<section>
+						<img style="width:80%" data-src="../pictures/resources_interlinking_idref_isni.jpg" />
+					</section>
+					<section>
+						<img data-src="../pictures/symogih_rdf_ontologie.jpg" />
+					</section>
+					<section>
+						<img style="width:80%" data-src="../pictures/symogih_rdf_millini.jpg" />
+						<p><a href="http://symogih.org/resource/TyIn6" target="_blank" style="font-size:80%">Appointment (<i>Nomination</i>)
+								-TyIn6</a></p>
+					</section>
+					<section>
+						<img data-src="../pictures/symogih_rdf_alignement_cidoc_crm.jpg" />
+						<p><a href="http://www.cidoc-crm.org/" target="_blank" style="font-size:80%">CIDOC CRM (official standard ISO
+							21127:2006)</a></p>
+					</section>
+					<section>
+						<img style="width:80%" data-src="../pictures/dfh_vision.jpg" />
+						<p style="font-size:80%"><a href="http://dataforhistory.org/meetings" target="_blank">Data for History Consortium</a></p>
+					</section>
+					<section>
+						<a href="http://ontologies.dataforhistory.org/class" target="_blank"><img style="width:80%" data-src="../pictures/onto_me.png"
+							 /></a>
+					</section>
+					<section>
+						<img data-src="../pictures/dfh_community_functional.jpg" />
+					</section>
+					<section>
+						<img data-src="../pictures/dfh_api.jpg" style="width:70%;border:none" />
+					</section>
+					<section>
+						<img data-src="../pictures/dfh_fair.jpg" />
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>A digital atlas of political territories</h4><br /><h4>1. Desired features</h4>
+					</section>
+					<section><a title="Lien vers l'atlas"
+							href="http://geo-larhra.ish-lyon.cnrs.fr/?q=atlas-historique/regroupement-de-territoires/evolution-des-territoires-en-europe"
+							target="_blank"><img style="width:80%;" src="../pictures/atlas_frontieres_politique_europe.jpg" /></a>
+						<p style="font-size:70%"><a
+								href="http://geo-larhra.ish-lyon.cnrs.fr/?q=atlas-historique/regroupement-de-territoires/evolution-des-territoires-en-europe"
+								target="_blank">Prototype of an atlas of political territories in Europe</a></p>
+					</section>
+					<section>
+						<img data-src="../pictures/Italie_unification.jpg" />
+						<p style="font-size:70%">Historical georeferenced maps adapted to the period under consideration</p>
+					</section>
+					<section>
+						<img style="width:70%;" data-src="../pictures/italie_sparql_bayerische_biblio.png" />
+						<p style="font-size:70%">Good quality georeferenced maps which can be used for spatial analysis</p>
+					</section>
+					<section>
+						<img style="width:80%;" src="../pictures/atlas_revolution_belgique.jpg" />
+						<p style="font-size:70%">Spatial data representing the historical evolution of territories</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>A digital atlas of political territories</h4>
+						<br /><h4>2. Building a collaborative gazetteer:<br /> the identity of geographical places</h4>
+					</section>
+					<section>
+						<img data-src="../pictures/dariah_2013_place_definition.jpg" />
+					</section>
+					<section>
+						<img data-src="../pictures/symogih_place_datamodel_2014.jpg" />
+					</section>
+					<section>
+						<img style="width:130%" data-src="../pictures/dariah_2013_place_type_class_new.jpg" />
+						<p style="font-size:60%; text-align:right"><a
+								href="https://analytics.huma-num.fr/pole-histoire-numerique/getty_place_types/d3_getty_tree_json_collapsible_with_frequency.html"
+								target="_blank"> A controlled vocabulary for place types:<br />Getty Art and Architecture Thesaurus </a></p>
+					</section>
+					<!--<section data-background-size="80%" data-background-image="../pictures/geographical_place.jpg">
+					</section>
+					-->
+					<section>
+						<a href="http://ontologies.dataforhistory.org/class/25" target="_blank"><img style="width:200%;border:none; display:block;"
+								data-src="../pictures/geographical_place.jpg" /></a>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>A digital atlas of political territories</h4>
+						<br />
+						<h4>3. Modelling the historical evolution of places and their representations with geometries</h4>
+					</section>
+					<section>
+						<img data-src="../pictures/symogih_place_datamodel_2014.jpg" />
+					</section>
+					<section>
+						<img data-src="../pictures/CMRgeo_spaceTimeVolume.jpg" />
+					</section>
+					<section data-background-image="../pictures/alignement_geographical_declarative_place.jpg" data-background-size="70%">
+						<!--<img data-src="../pictures/alignement_geographical_declarative_place.jpg" />-->
+					</section>
+					<section>
+						<img data-src="../pictures/CMRgeo_geosparql.jpg" />
+					</section>
+					<section>
+						<img data-src="../pictures/CMRgeo_declarative_phenomenal.jpg" />
+					</section>
+					<section data-background-image="../pictures/alignement_geographical_declarative_place.jpg" data-background-size="70%">
+						<!--<img data-src="../pictures/alignement_geographical_declarative_place.jpg" />-->
+					</section>
+					<section>
+						<img src="../pictures/mcd_lieux_avec_infos_sources.jpg" style="width:70%" />
+						<p style="font-size:70%">The historical evolution of territories is handled in the ontology</p>
+					</section>
+					<section>
+						<p style="font-size:70%">Historical relationships among places, and/or among collective actors and places <br />are modelled
+							in the ontology <span class="fragment"><br />independently from the representation of places using geometries</span></p>
+						<br />
+						<p class="fragment" style="font-size:70%">"Types of information" (Temporal entities' classes – 'events'):</p>
+						<ul class="fragment" style="font-size:60%">
+							<li><a target="_blank" href="http://symogih.org/?q=type-of-information-record/99">TyIn99 – Power relationship between
+									collective actors</a></li>
+							<li><a target="_blank" href="http://symogih.org/?q=type-of-information-record/169">TyIn169 – Exercise of power over a
+									territory</a></li>
+							<li><a target="_blank" href="http://symogih.org/?q=type-of-information-record/169">TyIn36 – Location (of any
+								entity)</a></li>
+							<li><a target="_blank" href="http://symogih.org/?q=type-of-information-record/133">TyIn133 – Incorporation of
+									territory</a></li>
+						</ul>
+					</section>
+					<section>
+						<p style="font-size:70%"><a href="http://symogih.org/resource/TyIn133" target="_blank">Type of information "Incorporation of
+								territory" (<i>rattachement de territoire</i>)</a>
+							<a href="http://symogih.org/resource/TyIn133" target="_blank"><img src="../pictures/TyIn133.jpg"
+									style="width:80%;border:none" /></a></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4 style="font-size:80%">A digital atlas of political territories</h4><br />
+						<h4>4. Producing data</h4>
+					</section>
+					<section>
+						<img data-src="../pictures/symogih_historical_data_input.jpg" />
+						<p style="font-size:70%">Territories' evolution is first addressed in ontology</p>
+					</section>
+					<section>
+						<p style="font-size:70%; text-align:left">Then geometries are produced<br />The issue of choosing the most appropriate scale: <ul>
+								<li style="font-size:70%; text-align:left" class="fragment">Time scale: precision to the day</li>
+								<li style="font-size:70%; text-align:left" class="fragment">Spatial scale: inhabited places and significant natural
+									features are inside the correct political territory <span class="fragment"> (B.) <br />
+										<br />
+										<img style="width:60%;" data-src="../pictures/communes_frontiere_luxembourg_annote.png" />
+									</span>
+								</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<img src="../pictures/mcd_lieux_avec_infos_sources.jpg" style="width:80%" />
+						<p style="font-size:70%">The historical evolution of territories is handled in the ontology</p>
+					</section>
+					<section>
+						<img data-src="../pictures/exemple_production_geometries.jpg" />
+					</section>
+					<section>
+						<img src="../pictures/atlas_revolution_belgique.jpg" />
+						<p style="font-size:70%">Evolution of Belgium's territory<br /> (<a
+								href="http://geo-larhra.ish-lyon.cnrs.fr/?q=atlas-historique/regroupement-de-territoires/evolution-des-territoires-en-europe"
+								target="_blank">See the atlas</a>)</p>
+					</section>
+					<section>
+						<img data-src="../pictures/italie_sparql_bayerische_biblio.png" />
+					</section>
+					<section>
+						<img data-src="../pictures/bayr_biblio_italie_resultat.jpg" />
+					</section>
+					<section>
+						<div style="float:left;width:50%;" class="centered">
+							<a href="http://geo-larhra.ish-lyon.cnrs.fr/?q=geocatalogue/vectors" target="_blank"><img
+									data-src="../pictures/geocatalogue_italie.png" /></a>
+						</div>
+						<div style="float:right;width:40%;padding-right:5px;font-size:70%">
+							<p><i>symogih.org</i> SPARQL enpoint:</p>
+							<br />
+							<p><a
+									href="http://bhp-publi.ish-lyon.cnrs.fr:8888/sparql?default-graph-uri=http%3A%2F%2Fsymogih.org%2Fgraph%2Fsymogih-bhp&amp;query=SELECT+%3Fs+%3Flabel+%3Fdate%0D%0AWHERE+%7B%3Fs+%3Fp+syr%3ATyIn133%3B%0D%0Asym%3AknowledgeUnitStandardLabel+%3Flabel%3B%0D%0Asym%3AknowledgeUnitStandardDate+%3Fdate%7D&amp;should-sponge=&amp;format=text%2Fhtml&amp;timeout=0&amp;debug=on"
+									target="_blank">SELECT ?s ?label ?date<br /> WHERE {?s ?p syr:TyIn133;<br /> sym:knowledgeUnitStandardLabel
+									?label;<br /> sym:knowledgeUnitStandardDate ?date}</a></p>
+						</div>
+						<!--<br clear="all"/>-->
+					</section>
+				</section>
+				<section>
+					<section><h4>Conclusion</h4></section>
+					<section>
+						<ul>
+							<li style="font-size:70%; text-align:left">Rewrite/republish the atlas' data according to the new model, including
+								geometries and rich metadata<span class="fragment">: <span style="color:blue">FA<span style="color:red"
+										>I</span>R</span> data. </span>
+							</li>
+							<li style="font-size:70%; text-align:left" class="fragment">Produce new data <span class="fragment">or find partners
+									interested in sharing this vision</span><span class="fragment">, and start together a new project </span>
+							</li>
+						</ul></section>
+					<section style="font-size:70%;">
+						<p>The End</p>
+						<p class="fragment">or ...</p>
+					</section>
+					<section style="font-size:70%;">
+						<p>... the beginning of</p>
+						<br />
+						<img style="width:60%;" src="../pictures/atlas_revolution_belgique.jpg" />
+						<br />
+						<p>a new digital atlas of political territories.</p>
+					</section>
+				</section>
+			</div>
+		</div>
+		<script src="../reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+			 slideNumber: 'c/t' ,
+			 
+			 // Factor of the display size that should remain empty around the content
+			margin: 0.1,
+
+			// Bounds for smallest/largest possible scale to apply to content
+			minScale: 0.2,
+			maxScale: 3 /*1.5*/
+			});
+		</script>
+	</body>
+</html>
