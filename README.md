@@ -12,3 +12,5 @@ This website publishes resources, documentation, code, etc. concerning my resear
 ### Projects
 
 - The <a href="http://symogih.org" target="_blank">symogih.org</a> project
+- OntoME : <a href="https://ontome.net" target="_blank">ontome.net</a>
+- The <a href="https://www.geovistory.org" target="_blank">Geovistory</a> project
