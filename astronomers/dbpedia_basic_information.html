@@ -5,13 +5,22 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.2"></script>
 </head>
-<body>
-    <h1>Astronomers in DBPedia</h1>
+<body<div>>
+    
+      <h1>Astronomers in DBPedia</h1>
+  
+      This project is dedicated to exploring the information available in DBPedia about astronomers. 
+      The term astronomy is used here in a broader sense.
 
-    This project is dedicated to exploring the information available in DBPedia about astronomers. 
-    The term astronomy is used here in a broader sense.
-  <div id="vis"/>
-  <script>
+</div> 
+
+
+
+<div id="vis">
+<h2>Graphique réalisé avec Vega-Lite</h2>
+
+
+<script>
     const spec = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "white",
@@ -22,7 +31,7 @@
   "data": [
     {
       "name": "source_0",
-      "url": "http://localhost:8888/files/astronomers/notebooks_jupyter/dbpedia_exploration/data/birth_years_grouped_y.json",
+      "url": "https://github.com/Sciences-historiques-numeriques/astronomers/tree/main/notebooks_jupyter/dbpedia_exploration/data/birth_years_grouped_y.json",
       "format": {"type": "json"},
       "transform": [
         {
@@ -113,12 +122,13 @@
 };
     vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
+</div>
 
 
 
-<h2>Le même grpahique qvec Plotly</h2>
-
-<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+<div>       
+  <h2>Le même grahique réalisé avec Plotly</h2>
+  <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
   <script type="text/javascript">/**
 * plotly.js v2.16.1
 * Copyright 2012-2022, Plotly, Inc.
