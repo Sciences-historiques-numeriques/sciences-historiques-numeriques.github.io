@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.2"></script>
-</head>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.2"></script>
+  </head>
 <body>
   
   <div>
@@ -22,107 +22,30 @@
 
 
 <script>
-    const spec = {
-  "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "background": "white",
-  "padding": 5,
-  "width": 1000,
-  "height": 300,
-  "style": "cell",
-  "data": [
-    {
-      "name": "source_0",
-      "url": "https://github.com/Sciences-historiques-numeriques/astronomers/tree/main/notebooks_jupyter/dbpedia_exploration/data/birth_years_grouped_y.json?raw=true",
-      "format": {"type": "json"},
-      "transform": [
-        {
-          "type": "filter",
-          "expr": "isValid(datum[\"eff\"]) && isFinite(+datum[\"eff\"])"
-        }
-      ]
-    }
+  const spec = {
+"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+"data": {
+  "url": "./data/birth_years_grouped_y.json"
+},
+"mark": "bar",
+"encoding": {
+  "tooltip": [
+    {"field": "year", "title": "Year", "type": "quantitative"},
+    {"field": "names", "title": "Names", "type": "nominal"}
   ],
-  "marks": [
-    {
-      "name": "marks",
-      "type": "rect",
-      "style": ["bar"],
-      "from": {"data": "source_0"},
-      "encode": {
-        "update": {
-          "fill": {"value": "#4c78a8"},
-          "tooltip": {
-            "signal": "{\"Year\": format(datum[\"year\"], \"\"), \"Names\": isValid(datum[\"names\"]) ? datum[\"names\"] : \"\"+datum[\"names\"]}"
-          },
-          "ariaRoleDescription": {"value": "bar"},
-          "description": {
-            "signal": "\"Year: \" + (format(datum[\"year\"], \"\")) + \"; Names: \" + (isValid(datum[\"names\"]) ? datum[\"names\"] : \"\"+datum[\"names\"]) + \"; year: \" + (isValid(datum[\"year\"]) ? datum[\"year\"] : \"\"+datum[\"year\"]) + \"; eff: \" + (format(datum[\"eff\"], \"\"))"
-          },
-          "x": {"scale": "x", "field": "year"},
-          "width": {"scale": "x", "band": 1},
-          "y": {"scale": "y", "field": "eff"},
-          "y2": {"scale": "y", "value": 0}
-        }
-      }
-    }
-  ],
-  "scales": [
-    {
-      "name": "x",
-      "type": "band",
-      "domain": {"data": "source_0", "field": "year", "sort": true},
-      "range": [0, {"signal": "width"}],
-      "paddingInner": 0.1,
-      "paddingOuter": 0.05
-    },
-    {
-      "name": "y",
-      "type": "linear",
-      "domain": {"data": "source_0", "field": "eff"},
-      "range": [{"signal": "height"}, 0],
-      "nice": true,
-      "zero": true
-    }
-  ],
-  "axes": [
-    {
-      "scale": "y",
-      "orient": "left",
-      "gridScale": "x",
-      "grid": true,
-      "tickCount": {"signal": "ceil(height/40)"},
-      "domain": false,
-      "labels": false,
-      "aria": false,
-      "maxExtent": 0,
-      "minExtent": 0,
-      "ticks": false,
-      "zindex": 0
-    },
-    {
-      "scale": "x",
-      "orient": "bottom",
-      "grid": false,
-      "title": "year",
-      "values": [1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800],
-      "labelAlign": "right",
-      "labelAngle": 270,
-      "labelBaseline": "middle",
-      "zindex": 0
-    },
-    {
-      "scale": "y",
-      "orient": "left",
-      "grid": false,
-      "title": "eff",
-      "labelOverlap": true,
-      "tickCount": {"signal": "ceil(height/40)"},
-      "zindex": 0
-    }
-  ]
+  "x": {
+    "axis": {"values": [1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800]},
+    "field": "year",
+    "type": "ordinal"
+  },
+  "y": {"field": "eff", "type": "quantitative"}
+},
+"height": 300,
+"width": 1000,
+"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json"
 };
-    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
-  </script>
+  vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+</script>
 </div>
 
 
