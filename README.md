@@ -1,8 +1,7 @@
 ## Welcome to the Digital Historian website !
 
 
-This website was initiated and is maintained by Francesco Beretta. It publishes resources, documentation, code, etc. concerning digital history research and teaching.
-
+This website was initiated and is maintained by Francesco Beretta. It publishes resources, documentation, code, etc. for research and teaching in digital history.
 
 ### Publications and websites
 
