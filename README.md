@@ -21,6 +21,7 @@ This website was initiated and is maintained by Francesco Beretta. It publishes 
 
 ### Tutorials
 
+[Rdf / SPARQL tutorials](tutorials/RDF_SPARQL/_contents.md)
 
 
 ### Projects
