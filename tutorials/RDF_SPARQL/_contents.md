@@ -2,13 +2,13 @@
 
 ### Introduction
 
-* [Intro delete update](insert_delete_intro.md)
+* [Intro delete update](insert_delete_intro)
 
 
 
 
 ### Triplestores
 
-* [Install Fuseki](fuseki_install.md)
+* [Install Fuseki](fuseki_install)
 
 
