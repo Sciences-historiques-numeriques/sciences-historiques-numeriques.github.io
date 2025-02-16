@@ -21,7 +21,9 @@ This website was initiated and is maintained by Francesco Beretta. It publishes 
 
 ### Tutorials
 
-[Rdf / SPARQL tutorials](tutorials/RDF_SPARQL/_contents.html)
+<a href="https://historian.digital/tutorials/RDF_SPARQL/_contents.html">Rdf / SPARQL tutorials</a>
+
+
 
 
 
