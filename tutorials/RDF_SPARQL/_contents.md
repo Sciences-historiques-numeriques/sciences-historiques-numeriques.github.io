@@ -2,7 +2,7 @@
 
 ### Introduction
 
-* [Intro delete update](insert_delete_intro)
+* [Intro delete update](./insert_delete_intro.md)
 
 
 
