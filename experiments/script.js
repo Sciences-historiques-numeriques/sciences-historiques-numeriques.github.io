@@ -1,4 +1,4 @@
-import {sendSparqlQuery} from './my_functions.js';
+import {sendSparqlQuery} from './sqarql-queries/my_functions.js';
 
 // Example usage: Replace 'yourEndpoint' with your actual SPARQL endpoint URL
 // and 'yourQuery' with your actual SPARQL query.
