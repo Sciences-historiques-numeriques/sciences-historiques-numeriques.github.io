@@ -30,12 +30,13 @@
     //var endpoint = 'https://ag1yqae8nwnhv3g7.allegrograph.cloud/repositories/science-history';
     var query = `
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    SELECT ?sLabel ?s (count(*) as ?number)
+    SELECT ?sLabel ?s (count(*) as ?propertyNumber)
     WHERE {?s?p?o;
     a <https://ontome.net/ontology/c21>;
     rdfs:label ?sLabel
     } 
     GROUP BY ?s ?sLabel
+    ORDER BY DESC(?propertyNumber)
     LIMIT 30`; // get persons
     sendSparqlQuery(endpoint, query);
 
