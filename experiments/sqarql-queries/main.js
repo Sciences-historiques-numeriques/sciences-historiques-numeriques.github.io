@@ -12,6 +12,7 @@ WHERE {
 }
 GROUP BY ?classLabel ?class
 order by DESC(?number)
+offset 7
 limit 10
 `;
 console.log(sparqlQuery)
@@ -71,11 +72,20 @@ fetch(sparqlEndpoint, {
 
 // Add chart title
 svg.append("text")
-.attr("x", margin.right + 250)
-.attr("y", margin.bottom - 5)
-.attr("font-size", "16px")
-.attr("font-weight", "bold")
-.text("Most frequent classes");
+.attr("x", width*0.5)
+.attr("y", height*0.2)
+.attr("font-size", "14px")
+//.attr("font-weight", "bold")
+.text("Most frequent classes in the")
+.append("tspan")
+.attr("x", width*0.5)
+.attr("dy", "1.2em")
+.append("a")
+.attr("xlink:href", "https://www.geovistory.org/project/1483135")
+.attr("target", "_blank") 
+.style("text-decoration", "underline")
+.style("fill", "blue")
+.text("Academic Education & Careers project");
 
 
 
@@ -88,6 +98,7 @@ svg.append("text")
    .attr('x', (d, i) => x(labels[i]))
    .attr('y', d => y(d))
    .attr('width', x.bandwidth())
-   .attr('height', d => height - y(d));
+   .attr('height', d => height - y(d))
+   .attr("fill", "#add8e6");
 })
 .catch(error => console.error('Error:', error));
