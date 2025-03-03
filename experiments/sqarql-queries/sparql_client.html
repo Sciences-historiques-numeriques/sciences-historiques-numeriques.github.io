@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>SPARQL-client</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+    </head>
+
+<body>
+<h2>SPARQL Query Results</h2>
+
+<div id="queryResults"></div>
+
+<script type="module">
+
+   // read the height of the Eiffel Tower from Wikidata with a SELECT query
+
+import ParsingClient from './sparql-http-client/ParsingClient.js'
+
+const endpointUrl = 'https://query.wikidata.org/sparql'
+const query = `
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+
+SELECT ?value WHERE {
+  wd:Q243 p:P2048 ?height.
+
+  ?height pq:P518 wd:Q24192182;
+    ps:P2048 ?value .
+}`
+
+const client = new ParsingClient({ endpointUrl })
+const result = await client.query.select(query)
+
+for (const row of result) {
+  for (const [key, value] of Object.entries(row)) {
+    console.log(`${key}: ${value.value} (${value.termType})`)
+  }
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>SPARQL-client</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+    </head>
+
+<body>
+<h2>SPARQL Query Results</h2>
+
+<div id="queryResults"></div>
+
+<script type="module">
+const SparqlClient = require('sparql-http-client')
+
+const client = new SparqlClient({ endpointUrl: 'https://query.wikidata.org/sparql' })
+const stream = await client.query.construct('DESCRIBE <http://www.wikidata.org/entity/Q54872>')
+
+stream.on('data', quad => {
+  console.log(`${quad.subject.value} ${quad.predicate.value} ${quad.object.value}`)
+})
+</script>
+
+
+</body>
+</html>
+
+
+
