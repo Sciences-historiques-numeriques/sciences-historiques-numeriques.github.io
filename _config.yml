@@ -1,7 +1,2 @@
 theme: jekyll-theme-architect
 title: Digital Historian
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
