@@ -32,4 +32,4 @@ This website was initiated and is maintained by Francesco Beretta. It publishes 
 ### Research or Teaching Projects
 
 - DBPedia Astronomers:
-    - <a href="https://historian.digital/astronomers/dbpedia_basic_information.html" target="_blank">Basic Information</a>
+    - <a href="https://historian.digital/astronomers/dbpedia_basic_information" target="_blank">Basic Information</a>
