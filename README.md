@@ -18,7 +18,7 @@ This website was initiated and is maintained by Francesco Beretta. It publishes 
 
 ### Tutorials
 
-<a href="https://historian.digital/tutorials/RDF_SPARQL/_contents.html">Rdf / SPARQL tutorials</a>
+<a href="https://historian.digital/tutorials/RDF_SPARQL/">Rdf / SPARQL tutorials</a>
 
 
 
@@ -33,3 +33,9 @@ This website was initiated and is maintained by Francesco Beretta. It publishes 
 
 - DBPedia Astronomers:
     - <a href="https://historian.digital/astronomers/dbpedia_basic_information" target="_blank">Basic Information</a>
+
+
+
+### Experiments
+
+- [Contents](experiments/index.html)
