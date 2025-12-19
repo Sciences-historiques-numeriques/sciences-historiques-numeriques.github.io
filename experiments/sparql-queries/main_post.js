@@ -1,5 +1,7 @@
 const sparqlEndpoint = 'https://sparql.geovistory.org/api_v1_project_1483135';
 //const sparqlEndpoint = 'https://ag1yqae8nwnhv3g7.allegrograph.cloud/repositories/science-history';
+//const sparqlEndpoint = 'https://fberetta.lod4hss.cloud/wisski/endpoint/default'
+
 
 const sparqlQuery = `
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
