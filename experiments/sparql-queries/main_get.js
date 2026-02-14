@@ -33,7 +33,7 @@ GROUP BY ?classLabel ?class
 order by DESC(?number)
 offset 7
 limit 10`;
-console.log(sparqlQuery)
+  console.log(sparqlQuery)
 
 // Encode query for URL
 const encodedQuery = encodeURIComponent(sparqlQuery);
