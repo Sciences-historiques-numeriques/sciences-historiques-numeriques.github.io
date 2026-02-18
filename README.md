@@ -25,6 +25,7 @@ Legacy Project:
 
 <a href="https://historian.digital/tutorials/RDF_SPARQL/">Rdf / SPARQL tutorials</a>
 
+<a href="https://historian.digital/courses/lod-and-data-analysis/index.html">Data analysis and LOD</a>
 
 
 ### Slides
