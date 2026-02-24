@@ -1,11 +1,9 @@
 
- <link rel="stylesheet" href="../lod-and-data-analysis/styles.css">
-
 
 ## Install VSCode and GIT
 
 
-* *We will use Visual Studio Code (VS Code) as our text and code editor.
+* We will use Visual Studio Code (VS Code) as our text and code editor.
 This widely used software, now owned by Microsoft, is open source and also has multiple plug-ins (add-ons) that add useful features.
 All the necessary instructions and software downloads can be found here:
 https://code.visualstudio.com/docs (Download Visual Studio Code)
