@@ -1,3 +1,7 @@
+
+ <link rel="stylesheet" href="../lod-and-data-analysis/styles.css">
+
+
 ## Install VSCode and GIT
 
 
