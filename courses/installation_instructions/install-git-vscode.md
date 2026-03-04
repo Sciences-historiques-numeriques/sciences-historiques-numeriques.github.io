@@ -22,3 +22,4 @@ Some extensions of VSCode add relevant and useful functions to the editor.
 * Markdown Editor (zaak) adds a WYSIWIG editor and an HTML export function.
   * when you've opened a MD document you can activate it with shift-ctrl-cmd(or)alt)-M or from the Command Palette
 * CSV to Markdown Table (phoihos) allows to convert CSV data to a markdown table
+* SPARQL Notebook (Zazuko) "a powerful way to document SPARQL queries and make them execute as notebook code cells." - always export the queries to Markdown pages
