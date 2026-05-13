@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<pathbuilderinterface>
+  <path>
+    <id>person_membership</id>
+    <weight>0</weight>
+    <enabled>1</enabled>
+    <group_id>0</group_id>
+    <bundle>b81cd8096ca801fb3a82b50037edceb0</bundle>
+    <field/>
+    <fieldtype/>
+    <displaywidget/>
+    <formatterwidget/>
+    <cardinality>-1</cardinality>
+    <field_type_informative/>
+    <path_array>
+      <x>https://sdhss.org/ontology/social-life/C5</x>
+    </path_array>
+    <datatype_property>empty</datatype_property>
+    <short_name/>
+    <disamb>0</disamb>
+    <description/>
+    <uuid>726d8f44-6632-4052-a81e-f08419988988</uuid>
+    <is_group>1</is_group>
+    <name>Person Membership</name>
+  </path>
+  <path>
+    <id>person_member_</id>
+    <weight>0</weight>
+    <enabled>1</enabled>
+    <group_id>person_membership</group_id>
+    <bundle/>
+    <field>1ae353e47a8aa3fc995220848780758a</field>
+    <fieldtype>string</fieldtype>
+    <displaywidget>string_textfield</displaywidget>
+    <formatterwidget>string</formatterwidget>
+    <cardinality>-1</cardinality>
+    <field_type_informative>string</field_type_informative>
+    <path_array>
+      <x>https://sdhss.org/ontology/social-life/C5</x>
+      <y>https://sdhss.org/ontology/social-life/P1</y>
+      <x>http://www.cidoc-crm.org/cidoc-crm/E21</x>
+      <y>http://www.cidoc-crm.org/cidoc-crm/P1</y>
+      <x>http://www.cidoc-crm.org/cidoc-crm/E41</x>
+    </path_array>
+    <datatype_property>http://www.cidoc-crm.org/cidoc-crm/P3</datatype_property>
+    <short_name/>
+    <disamb>2</disamb>
+    <description/>
+    <uuid>270a6edc-5544-462e-9aec-d228d23dd88c</uuid>
+    <is_group>0</is_group>
+    <name>person member</name>
+  </path>
+</pathbuilderinterface>
