@@ -19,3 +19,22 @@ IMPORTANT (read carefully):
 * You can create as many public code repositories as you want. And a certain number of private ones
 * GitHub repositories are thought to store software, not large files. [**There are limits (see documentation)**](https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits). If you do not take them into account, you could encounter severe issues. 
 * See [additional instructions on this page](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account).
+
+## Create a website with GitHub Pages
+
+
+* [HTML](https://en.wikipedia.org/wiki/HTML5)
+* [XHTLM](https://en.m.wikipedia.org/wiki/XHTML) (Wikipedia): exemple en bas de page
+* [HTML tutorial](https://www.w3schools.com/html/html_xhtml.asp) (W3Schools)
+
+&nbsp;
+
+* [Cascading Stylesheets (CSS)](https://en.wikipedia.org/wiki/CSS)
+* [CSS Tutorial](https://www.w3schools.com/css/default.asp)
+
+&nbsp;
+
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [JavaScript tutorial](https://en.wikipedia.org/wiki/JavaScript)
+
+
